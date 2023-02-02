@@ -1,0 +1,21 @@
+I/ PHÍA NGƯỜI DÙNG:
+- Đây là một dự án cá nhân về mua bán thiết bị di động thông minh 
+- Phía người dùng tôi đã thực thi được các chức năng như: mua hàng ở website ISMART bằng việc: 
++ Ấn vào nút mua hàng sản phẩm sẽ được thêm vào giỏ hàng nhờ vào chức nằng thêm giỏ hàng 
++ Sau khi thêm vào giỏ hàng thông tin giỏ hàng lúc này sẽ được lưu ở SESSION 
++ Tất cả thông tin này được hiển thị ở trang giỏ hàng (bao gồm các thông tin cơ bản của giỏ hàng: mã sản phẩm, tên sản phẩm, giá sản phẩm, tổng tiền, ...)
++ Ở trang giỏ hàng tôi đã thực hiện code các chức năng như xóa giỏ hàng và cập nhật giỏ hàng
++ Thông qua từng rowId và số lượng sản phẩm nhập vào để tiến hàng xóa sau khi xóa xong thì chuyển hướng về trang giỏ hàng
++ Ở phần cập nhật có chức năng cập nhập số lượng sản phẩm đã mua và tổng giá trị đơn hàng bằng Ajax 
++ Sau khi cập nhập thì ấn thanh toán và lúc này khách hàng sẽ nhập thông cơ bản của mình bao gồm (email, số điện thoại, địa chỉ nhận hàng....) và khi khách hàng ấn đặt hàng thì thông tin sẽ được lưu vào Database của bảng đơn hàng, và hiển thị thông tin đơn hàng cho khách xem, và ngoài ra còn thông báo cho khách hàng qua email về đơn hàng mà sách đã đặt 
+
+II/ PHÍA ADMIN: 
+- Module người dùng (user): Dự án có các chức năng thêm, sửa, xóa vĩnh viễn, xóa tạm thời, cập nhật người đùng, ngoài ra trong dự án còn có phân quyền người dùng trong module này
+- Module sản phẩm (product): Dự án có các chức năng thêm, sửa, xóa vĩnh viễn, xóa tạm thời, cập nhật sản phẩm
+- Module danh mục sản phẩm (cat_product): Dự án có các chức năng thêm, sửa, xóa vĩnh viễn, xóa tạm thời, cập nhập danh mục
+- Module đơn hàng (order): Dự án có các chức năng thêm, sửa, xóa vĩnh viễn, xóa tạm thời, cập nhật đơn hàng
+- Module bài viết (post): Dự án có các chức năng thêm, sửa, xóa vĩnh viễn, xóa tạm thời, cập nhật bài viết
+- Module slider: Dự án có các chức năng thêm, sửa, xóa vĩnh viễn, xóa tạm thời, cập nhật slider
+- Module page: Dự án có các chức năng thêm, sửa, xóa vĩnh viễn, xóa tạm thời, cập nhật trang page
+- Module bảng điều khiển (Dashboard): hiển thị danh thu cũng như các mục số lượng xuất hàng, nhập hàng, lợi nhuận của shop
+- Phần phân quyền thì những account nào có quyền manager_all thì cho tất cả quyền của trang web, những account nào có quyền manager_page thì chỉ truy xuất vào module page, những account nào có quyền manager_post thì chỉ được truy xuất vào module post, những account nào có quyền manager_product thì chỉ truy xuất vào được product, những account nào có quyền manager_order thì chỉ truy xuất vào được module order, những account nào có quyền slider thì chỉ truy xuất vào được module slider, những ai có account trong Database mới được vào trang admin để quản lý trang web. 
